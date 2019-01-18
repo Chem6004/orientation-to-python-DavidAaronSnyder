@@ -18,6 +18,7 @@ m = np.zeros(Npart)
 v = np.zeros(Npart)
 q = np.zeros(Npart)
 x = np.zeros(Npart)
+T = np.zeros(Npart)
 
 for i in range(0,Npart):
     m[i] = 1.0
@@ -25,10 +26,12 @@ for i in range(0,Npart):
     x[i] = 0.5*i
     v[i] = 0.2*i
     
-    
+    T[i] = 0.5*m[i]*v[i]**2
 
 print(m)
 print(q)
 print(x)
 print(v)
+
+print(T)
     
